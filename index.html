@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./index.css" />
+	<title>Document</title>
+</head>
+<body>
+	<div class="hero">
+		<div class="desktop-nav">
+			<nav class="Navbar">
+				<div class="navbar_sub_container">
+				  <div class="left">
+					<ul class="link">
+						<li class="links"> <a class="nav-link" href="#tournaments">Tournaments</a></li>
+						<li class="links"> <a class="nav-link" href="#aboutUs">Our Team</a></li>
+						<li class="links"> <a class="nav-link" href="#shop">Our Sponsors</a></li>
+					</ul>
+				  </div>
+				  <div class="middle">
+					<div class="logo">
+					  <img src="./public/images/logo.svg" alt="Logo" class="logo_img" />
+					</div>
+				  </div>
+				  <div class="right">
+					<ul class="link">
+						<li class="links"> <a class="nav-link" href="#aboutUs">About Us</a></li>
+						<li class="links"> <a class="nav-link" href="#contact">Contact Us</a></li>
+						<li class="links"> <a class="nav-link" href="#shop">Shop</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+		
+		  
+			<Navbar /> <!--{/* This will be visible on larger devices */}-->
+		</div>
+		<div class="mobile-nav">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png" class="navbar-image" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav text-center ">
+						<a class="nav-link active" href="#">
+							Home <span class="sr-only">(current)</span>
+						</a>
+						<a class="nav-link" href="#tournaments">Tournaments</a>
+						<a class="nav-link" href="#aboutUs">Our Team</a>
+						<a class="nav-link" href="#shop">Our Sponsors</a>
+						<a class="nav-link" href="#aboutUs">About Us</a>
+						<a class="nav-link" href="#shop">Shop</a>
+						<a class="nav-link" href="#contact">Contact Us</a>
+					</div>
+				</div>
+			</nav>
+			<MobileNavbar />  <!--/* This will be visible on smaller devices */ -->
+		</div>
+		<div class="heroContainer">
+			<div class="hero__left__container">
+				<div class="hero__left__contain">
+				  <span class="first__heading__hero__title">
+					Welcome to the
+					<span class="__heading__tittle__style"> Esports</span>
+				  </span>
+				  <span class="second__heading__hero__subTitle">Multiverse</span>
+				</div>
+				<div class="hero__button">
+					<button class="hero__btn__join__tournament"> Join Tournament</button>
+				  </div>
+				</div>
+				<div class="hero__right__container">
+				  <div class="hero__right__image">
+					<img src="./images/Rectangle 14.png" alt="" class="hero__right__images"/>
+					<img src="./images/Rectangle 15.png" alt="" class="hero__right__images"/>
+					<img src="./images/Rectangle 16.png"alt=""class="hero__right__images" />
+					<img src="./images/Rectangle 17.png"alt=""class="hero__right__images" />
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+<div class="aboutUs" id="aboutUs">
+	<h1 class="about__title"> About Us
+	<div class="aboutTitle"></div>
+	</h1>
+	<div class="about__container">
+		
+		<div class="left__About__Container">
+			<div class="left__about__img"></div>
+		</div>
+		<div class="right__About__Container">
+			<div class="right__about__top__sub__container">
+				<div class="right__about__top__sub__container__box">
+					<span class="right__about__top__sub__container__box__title">
+					  Tournaments played
+					</span>
+					<span class="right__about__top__sub__container__box__number">
+					  30
+					</span>
+				</div>
+				<div class="right__about__top__sub__container__box">
+					<span class="right__about__top__sub__container__box__title">
+					  Tournaments won
+					</span>
+					<span class="right__about__top__sub__container__box__number">
+					  10
+					</span>
+				</div>
+				<div class="right__about__top__sub__container__box">
+					<span class="right__about__top__sub__container__box__title">
+					  Award won
+					</span>
+					<span class="right__about__top__sub__container__box__number">
+					  5
+					</span>
+				</div>
+			</div>
+	     
+		      
+				<div class="right__about__middle__sub__container">
+				  <span class="right__about__middle__sub__container__text">
+					He is a professional esports gamer who competes in the game Dota
+					2. He is the carry and star player of the team Evil Geniuses, one
+					of the most successful and popular teams in the world. He is known
+					for his incredible mechanical skills, game sense, and versatility.
+					He can play any hero and any role, and often surprises his
+					opponents with his unconventional picks and builds.
+				  </span>
+				</div>
+				<div class="right__about__bottom__sub__container">
+				  <div class="about__button">
+					<button class="about__btn text-center">Learn More</button>
+				  </div>
+				</div>
+		</div>
+	</div>
+	
+</div>
+ 
+
+<section class="tournaments" id="tournaments">
+	<div class="head__Container">
+		<h1 class="tournament__title">Tournaments
+		<div class="tournamentTitle"></div></h1></div>
+	<div class="card__parent">
+		<div class="card__container">
+			<div class="card__img__container">
+				<img src="./images/Card img.png" alt="" class="cardImg" />
+			</div>
+			<div class="info__container">
+				<div class="info__container__title">CS:GO Global Gaming League</div>
+				<div class="info__container__timeDate">10 Sept 2023 / 14:00 PM IST</div>
+				<div class="info__container__price">
+					<div class="info__container__prices">
+						<span class="playMode">Play Mode</span>
+						<span class="playMode__ans">5V5</span>
+					</div>
+					<div class="info__container__prices">
+						<span class="playMode">Platform</span>
+						<span class="playMode__ans">PC</span>
+					</div>
+					<div class="info__container__prices">
+						<span class="playMode">Prize</span>
+						<span class="playMode__ans">$500</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+    
+		<div class="card__container">
+			<div class="card__img__container">
+				<img src="./images/img2.png" alt="" class="cardImg" />
+			</div>
+			<div class="info__container">
+				<div class="info__container__title">PUBG Esports Championship</div>
+				<div class="info__container__timeDate">15 Sept 2023 / 20:00 PM IST</div>
+				<div class="info__container__price">
+					<div class="info__container__prices">
+						<span class="playMode">Play Mode</span>
+						<span class="playMode__ans">1V1</span>
+					</div>
+					<div class="info__container__prices">
+						<span class="playMode">Platform</span>
+						<span class="playMode__ans">Mobile</span>
+					</div>
+					<div class="info__container__prices">
+						<span class="playMode">Prize</span>
+						<span class="playMode__ans">$600</span>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	
+
+		
+			<div class="card__container">
+				<div class="card__img__container">
+					<img src="./images/img3.png" alt="" class="cardImg" />
+				</div>
+				<div class="info__container">
+					<div class="info__container__title">Free Fire ultimate challenge</div>
+					<div class="info__container__timeDate">20 Sept 2023 / 22:00 AM IST</div>
+					<div class="info__container__price">
+						<div class="info__container__prices">
+							<span class="playMode">Play Mode</span>
+							<span class="playMode__ans">5V5</span>
+						</div>
+						<div class="info__container__prices">
+							<span class="playMode">Platform</span>
+							<span class="playMode__ans">Any</span>
+						</div>
+						<div class="info__container__prices">
+							<span class="playMode">Prize</span>
+							<span class="playMode__ans">$50</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+			
+				<div class="card__container">
+					<div class="card__img__container">
+						<img src="./images/img4.png" alt="" class="cardImg" />
+					</div>
+					<div class="info__container">
+						<div class="info__container__title">Call of Duty Mobile league</div>
+						<div class="info__container__timeDate">21 Sept 2023 / 20:00 PM IST</div>
+						<div class="info__container__price">
+							<div class="info__container__prices">
+								<span class="playMode">Play Mode</span>
+								<span class="playMode__ans">1V1</span>
+							</div>
+							<div class="info__container__prices">
+								<span class="playMode">Platform</span>
+								<span class="playMode__ans">Mobile</span>
+							</div>
+							<div class="info__container__prices">
+								<span class="playMode">Prize</span>
+								<span class="playMode__ans">$200</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
+				
+					<div class="card__container">
+						<div class="card__img__container">
+							<img src="./images/img5.png" alt="" class="cardImg" />
+						</div>
+						<div class="info__container">
+							<div class="info__container__title">CS:GO Ultimate Challenge</div>
+							<div class="info__container__timeDate">21 Sept 2023 / 16:00 PM IST</div>
+							<div class="info__container__price">
+								<div class="info__container__prices">
+									<span class="playMode">Play Mode</span>
+									<span class="playMode__ans">3V3</span>
+								</div>
+								<div class="info__container__prices">
+									<span class="playMode">Platform</span>
+									<span class="playMode__ans">Console</span>
+								</div>
+								<div class="info__container__prices">
+									<span class="playMode">Prize</span>
+									<span class="playMode__ans">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+				
+					<div class="card__container">
+						<div class="card__img__container">
+							<img src="./images/img6.png" alt="" class="cardImg" />
+						</div>
+						<div class="info__container">
+							<div class="info__container__title">Overwatch league tournament</div>
+							<div class="info__container__timeDate">25 Sept 2023 / 21:00 AM IST</div>
+							<div class="info__container__price">
+								<div class="info__container__prices">
+									<span class="playMode">Play Mode</span>
+									<span class="playMode__ans">5V5</span>
+								</div>
+								<div class="info__container__prices">
+									<span class="playMode">Platform</span>
+									<span class="playMode__ans">PC</span>
+								</div>
+								<div class="info__container__prices">
+									<span class="playMode">Prize</span>
+									<span class="playMode__ans">$200</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+			
+	</div>
+<button class="viewMore">View More</button>
+</section>
+
+
+<div class="contact__container" id="contact">
+			<div class="head__contact__title__container">
+			  <h1 class="contact__title">
+				Contact Us
+				<div class="contactTitle"></div>
+			  </h1>
+			</div>
+	  
+			<div class="contact__form__container">
+			  <div class="form__info__container">
+				<div class="location">
+				  <div class="location__name__container">
+					<div class="icon__container">
+						<i class="fas fa-map-marker-alt"></i>
+					  
+					  <span class="icon__name">Office Location:</span>
+					</div>
+					<span class="address">3rd Floor, Green Park, Bengaluru</span>
+				  </div>
+				</div>
+				<div class="contact">
+				  <div class="contact__name__container">
+					<div class="icon__container">
+						<i class="fas fa-phone"></i>
+					  <span class="icon__name">Contact No</span>
+					</div>
+					<span class="contc__no">+91 9876543210</span>
+				  </div>
+				</div>
+				<div class="email">
+				  <div class="email__name__container">
+					<div class="icon__container">
+						<i class="fas fa-envelope icon"></i>
+					  <span class="icon__name">Email</span>
+					</div>
+					<span class="contc__gmail">contact@gamingcompany.com</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="form__container">
+				<form class="form__form">
+				  <div class="form__input__Name__container">
+					<div class="name">
+					  <label htmlFor="">First Name*</label>
+					  <input class="form__input" type="text" placeholder="First Name"></input>
+					</div>
+					<div class="name">
+					  <label htmlFor="">Last Name*</label>
+					  <input
+						class="form__input"
+						type="text"
+						placeholder="Last Name"
+					  ></input>
+					</div>
+				  </div>
+				  <div class="form__input__info__container">
+					<div class="info__name">
+					  <label htmlFor="">Email*</label>
+					  <input
+						class="form__input"
+						type="email"
+						placeholder="Email"
+					  ></input>
+					</div>
+					<div class="info__name">
+					  <label htmlFor="">How did you hear about us?</label>
+					  <select
+						name=""
+						id=""
+						placeholder="How did you hear about us?"
+						class="form__input"
+					  >
+						<option value="" class="option__input">
+						  Select a option
+						</option>
+						<option value="" class="option__input">
+						  Google
+						</option>
+						<option value="" class="option__input">
+						  Facebook
+						</option>
+						<option value="" class="option__input">
+						  Instagram
+						</option>
+						<option value="" class="option__input">
+						  Friend
+						</option>
+					  </select>
+					</div>
+				  </div>
+				  <div class="form__message__container">
+					<div class="message__info__">
+					  <label htmlFor="" class="message__name">
+						Message
+					  </label>
+					  <textarea
+						class="form__message"
+						placeholder="Write your message"
+					  ></textarea>
+					</div>
+				  </div>
+				  <div class="form__button__container">
+					<button class="form__button">Submit</button>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+
+<!-- our shop -->
+<div class="shop" id="shop">
+	<div class="shoping__head">
+	  <h1 class="shoping__title">
+		Our Shop
+		<div class="shopingTitle"></div>
+	  </h1>
+	</div>
+
+	<div class="shop__card">
+		<div class="shop__card__item" >
+		  <div class="shop__card__item__img">
+			<img src="./images/shop1.png" alt="" class="product__img" />
+		  </div>
+		  <div class="shop__desc__info">
+			<div class="shop__card__item__popularity">
+			  <span class="popular">NEW</span>
+			</div>
+			<div class="shop__card__item__title">
+			  <h3 class="__card__item__title">Ultimate gaming PC</h3>
+			</div>
+
+			<div class="shop__card__item__price">
+			  <span>$1099</span>
+			</div>
+		  </div>
+		</div>
+
+
+		<div class="shop__card__item" >
+			<div class="shop__card__item__img">
+			  <img src="./images/shop2.png" alt="" class="product__img" />
+			</div>
+			<div class="shop__desc__info">
+			  <div class="shop__card__item__popularity">
+				<span class="popular">POPULAR</span>
+			  </div>
+			  <div class="shop__card__item__title">
+				<h3 class="__card__item__title">Xbox gaming controller</h3>
+			  </div>
+  
+			  <div class="shop__card__item__price">
+				<span>$599</span>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="shop__card__item" >
+			<div class="shop__card__item__img">
+			  <img src="./images/shop3.png" alt="" class="product__img" />
+			</div>
+			<div class="shop__desc__info">
+			  <div class="shop__card__item__popularity">
+				<span class="popular">NEW</span>
+			  </div>
+			  <div class="shop__card__item__title">
+				<h3 class="__card__item__title">Mechanical gaming keyboard</h3>
+			  </div>
+  
+			  <div class="shop__card__item__price">
+				<span>$399</span>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="shop__card__item" >
+			<div class="shop__card__item__img">
+			  <img src="./images/shop4.png" alt="" class="product__img" />
+			</div>
+			<div class="shop__desc__info">
+			  <div class="shop__card__item__popularity">
+				<span class="popular">POPULAR</span>
+			  </div>
+			  <div class="shop__card__item__title">
+				<h3 class="__card__item__title">Gaming headphone</h3>
+			  </div>
+  
+			  <div class="shop__card__item__price">
+				<span>$599</span>
+			  </div>
+			</div>
+		  </div>
+	
+	</div>
+
+	<!-- {/* Add the "View All" button here */} -->
+	<div class="view-all-button">
+	  <button class="shop__view__btn">View All</button>
+	</div>
+  </div>
+
+<!-- latest news -->
+<div class="latest-news">
+	<div class="news__header">
+	  <h1 class="news__title">
+		Latest News
+		<div class="newsTitle"></div>
+	  </h1>
+	</div>
+
+	<div class="news__list">
+	
+		<div class="news__item" >
+		  <div class="news__item__image">
+			<img src="./images/news1.png" alt="" class="news__img" />
+		  </div>
+		  <div class="news__item__info">
+			<div class="initial">
+			  <div class="news__item__category">
+				<span class="category">NEW</span>
+			  </div>
+			  
+			  <div class="news__item__date">
+				<span>Aug 27 2023</span>
+			  </div>
+			</div>
+			<div class="news__item__headline">
+			  <h3 class="__item__headline">Pro tips: How to improve your aim and reflexes in eSports</h3>
+			</div>
+		  </div>
+		</div>
+
+		<div class="news__item" >
+			<div class="news__item__image">
+			  <img src="./images/news2.png" alt="" class="news__img" />
+			</div>
+			<div class="news__item__info">
+			  <div class="initial">
+				<div class="news__item__category">
+				  <span class="category">Trending</span>
+				</div>
+				
+				<div class="news__item__date">
+				  <span>Aug 27 2023</span>
+				</div>
+			  </div>
+			  <div class="news__item__headline">
+				<h3 class="__item__headline">Top 10 eSports games to watch and play in 2023</h3>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="news__item" >
+			<div class="news__item__image">
+			  <img src="./images/news3.png" alt="" class="news__img" />
+			</div>
+			<div class="news__item__info">
+			  <div class="initial">
+				<div class="news__item__category">
+				  <span class="category">POPULAR</span>
+				</div>
+				
+				<div class="news__item__date">
+				  <span>Aug 28 2023</span>
+				</div>
+			  </div>
+			  <div class="news__item__headline">
+				<h3 class="__item__headline">The life of a professional eSports gamer</h3>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="news__item" >
+			<div class="news__item__image">
+			  <img src="./images/news4.png" alt="" class="news__img" />
+			</div>
+			<div class="news__item__info">
+			  <div class="initial">
+				<div class="news__item__category">
+				  <span class="category">Sponsored</span>
+				</div>
+				
+				<div class="news__item__date">
+				  <span>Aug 27 2023</span>
+				</div>
+			  </div>
+			  <div class="news__item__headline">
+				<h3 class="__item__headline">The best gaming accessories and gadgets for every gamer</h3>
+			  </div>
+			</div>
+		  </div>
+	
+	</div>
+
+	<div class="read-more-button">
+	  <button class="news__read__btn">View All</button>
+	</div>
+  
+
+  <!-- footer section -->
+
+  <div class="footer">
+	<div class="footer__Container">
+	  <div class="footer__top__container">
+		<div class="footer__top__container__logo__text">
+		  <div class="logo__img__bg">
+			<img
+			  src="./images/logo.png"
+			  alt="logo"
+			  class="FT__logo"
+			/>
+		  </div>
+		  <span class="__top__text">
+			Level Up Your Gaming Experience: Join Our <br /> Exclusive YouTube
+			Channel Membership Today!
+		  </span>
+		</div>
+		<div class="footer__top__container__button">
+		  <button class="join__tournament">Join Tournament</button>
+		</div>
+	  </div>
+	  <div class="footer__bottom__container">
+		<div class="footer__bottom__container__top__section">
+		  <div class="footer__bottom__logo__Links">
+			<div class="img__Footer__container">
+			  <img
+				src="./images/logo.png"
+				alt="logo"
+				class="footer__bottom__logo__img"
+			  />
+			</div>
+			<!--  Footer navLinks  -->
+			<div class="footer__bottom__nav__link__container">
+			  <ul class="footer__B__N__UL">
+				<li class="footer__B__N__LI">About Us</li>
+				<li class="footer__B__N__LI">Sponsorship</li>
+				<li class="footer__B__N__LI">Join Us</li>
+				<li class="footer__B__N__LI">Terms & Conditions </li>
+				<li class="footer__B__N__LI">Privacy Policy</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="footer__bottom__container__middle__section">
+		  <!-- {/* Form and Text */} -->
+		  <div class="footer__bottom__container__MS__NewsLetter">
+			<div class="footer__news__letter__container">
+			  <div class="footer__bottom__container__MS__NewsLetter__text">
+				Newsletter signUp
+				<div class="dash"></div>
+			  </div>
+			</div>
+			<div class="footer__bottom__container__MS__NewsLetter__input">
+			  <input
+				type="text"
+				placeholder="Enter your email address"
+				class="footer__bottom__container__MS__NewsLetter__input__field"
+			  />
+			  <button class="footer__bottom__container__MS__NewsLetter__input__button">
+				Subscribe
+			  </button>
+			</div>
+		  </div>
+		   <!-- Social Icons -->
+		  <div class="footer__bottom__container__MS__NewsLetter__social__Media">
+			<div class="footer__social__follow__container">
+			  <span class="followUs">
+				Follow Us
+				<div class="dice2"></div>
+			  </span>
+			</div>
+
+			 <!-- Social Media Icons  -->
+			<div class="footer__social__md__icons__container">
+			  <ul class="footer__social__md__icons__ul">
+				<li class="footer__social__md__icons__li">
+				   <img src="./public/images/facebook.svg" alt="facebook" class="footer__social__md__icons__img"/> 
+				  <FacebookOutlinedIcon class="footer__social__md__icons" />
+				</li>
+				<li class="footer__social__md__icons__li">
+				   <img src="./public/images/instagram.svg" alt="instagram" class="footer__social__md__icons__img"/> 
+				  <InstagramIcon class="footer__social__md__icons" />
+				</li>
+				<li class="footer__social__md__icons__li">
+				   <img src="./public/images/youtube.svg" alt="youtube" class="footer__social__md__icons__img"/> 
+				  <YouTubeIcon class="footer__social__md__icons__img" />
+				</li>
+				<li class="footer__social__md__icons__li">
+				  <svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					class="footer__social__md__icons__img"
+				  >
+					<path
+					  d="M20.317 4.1556C18.7873 3.45371 17.147 2.9366 15.4319 2.64043C15.4007 2.63471 15.3695 2.64899 15.3534 2.67756C15.1424 3.05278 14.9087 3.54228 14.7451 3.92702C12.9004 3.65085 11.0652 3.65085 9.25832 3.92702C9.09465 3.53373 8.85248 3.05278 8.64057 2.67756C8.62449 2.64995 8.59328 2.63566 8.56205 2.64043C6.84791 2.93565 5.20756 3.45277 3.67693 4.1556C3.66368 4.16131 3.65233 4.17084 3.64479 4.18321C0.533392 8.83157 -0.31895 13.3657 0.0991801 17.8436C0.101072 17.8655 0.11337 17.8864 0.130398 17.8998C2.18321 19.4073 4.17171 20.3225 6.12328 20.9291C6.15451 20.9387 6.18761 20.9272 6.20748 20.9015C6.66913 20.2711 7.08064 19.6064 7.43348 18.9073C7.4543 18.8664 7.43442 18.8178 7.39186 18.8016C6.73913 18.554 6.1176 18.2521 5.51973 17.9093C5.47244 17.8817 5.46865 17.814 5.51216 17.7816C5.63797 17.6874 5.76382 17.5893 5.88396 17.4902C5.90569 17.4721 5.93598 17.4683 5.96153 17.4798C9.88928 19.273 14.1415 19.273 18.023 17.4798C18.0485 17.4674 18.0788 17.4712 18.1015 17.4893C18.2216 17.5883 18.3475 17.6874 18.4742 17.7816C18.5177 17.814 18.5149 17.8817 18.4676 17.9093C17.8697 18.2588 17.2482 18.554 16.5945 18.8007C16.552 18.8169 16.533 18.8664 16.5538 18.9073C16.9143 19.6054 17.3258 20.2701 17.7789 20.9006C17.7978 20.9272 17.8319 20.9387 17.8631 20.9291C19.8241 20.3225 21.8126 19.4073 23.8654 17.8998C23.8834 17.8864 23.8948 17.8664 23.8967 17.8445C24.3971 12.6676 23.0585 8.17066 20.3482 4.18416C20.3416 4.17084 20.3303 4.16131 20.317 4.1556ZM8.02002 15.117C6.8375 15.117 5.86313 14.0314 5.86313 12.6981C5.86313 11.3648 6.8186 10.2791 8.02002 10.2791C9.23087 10.2791 10.1958 11.3743 10.1769 12.6981C10.1769 14.0314 9.22141 15.117 8.02002 15.117ZM15.9947 15.117C14.8123 15.117 13.8379 14.0314 13.8379 12.6981C13.8379 11.3648 14.7933 10.2791 15.9947 10.2791C17.2056 10.2791 18.1705 11.3743 18.1516 12.6981C18.1516 14.0314 17.2056 15.117 15.9947 15.117Z"
+					  fill="white"
+					/>
+				  </svg>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="footer__bottom__container__bottom__section">
+		  <span class="copyRight">
+			© 2023 UX Chandan. All Rights Reserved.
+		  </span>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+
+		
+	  
+	  
